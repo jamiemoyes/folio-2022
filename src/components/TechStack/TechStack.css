@@ -1,0 +1,41 @@
+.tech-container {
+  border: solid 1px var(--colour-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  /* max-width: 35rem; */
+  display: grid;
+  grid-template-rows: minmax(min-content, 15rem) 1fr;
+  gap: 1rem;
+}
+
+.tech-container form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech-container .chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: flex-start;
+}
+
+.tech-container .chip {
+  display: none;
+}
+
+html:has(#frontend:checked) .chip-frontend {
+  display: block;
+}
+
+html:has(#backend:checked) .chip-backend {
+  display: block;
+}
+
+html:has(#mobile:checked) .chip-mobile {
+  display: block;
+}
+
+html:has(#graphic-design:checked) .chip-graphic-design {
+  display: block;
+}

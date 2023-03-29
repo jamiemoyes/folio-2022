@@ -1,0 +1,30 @@
+.about-page {
+  padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 3rem;
+  font-family: 'Syne';
+}
+
+.about-section {
+  display: grid;
+  max-width: 40vh;
+  gap: 2rem;
+  grid-template-rows: min-content;
+}
+
+.img-container img {
+  aspect-ratio: 8/5;
+  object-fit: cover;
+  width: 100%;
+  object-position: 0 -5rem;
+  outline: solid 1px var(--colour-yellow);
+  outline-offset: 1rem;
+  border-radius: 0.8rem;
+}
+
+.tech-sec {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: min-content min-content;
+}

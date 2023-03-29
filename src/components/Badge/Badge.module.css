@@ -1,0 +1,27 @@
+.badge {
+  border: solid 2px var(--colour-font);
+  color: var(--colour-font);
+  background: var(--bg-colour);
+  width: max-content;
+  padding: 0.3ch 1.5ch;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3ch;
+  cursor: pointer;
+  height: 1.4rem;
+  z-index: 1;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.badge p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.badge svg {
+  width: 1rem;
+  scale: 70%;
+  height: 1rem;
+}

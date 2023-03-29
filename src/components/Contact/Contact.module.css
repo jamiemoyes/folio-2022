@@ -1,0 +1,28 @@
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-inline: 10%;
+  padding-bottom: 5rem;
+  gap: 1rem;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: baseline;
+
+  gap: 0.5rem;
+}
+
+.links {
+  display: grid;
+  grid-template-rows: repeact(auto-fit, 1fr);
+  font-size: 0.8rem;
+  gap: 0.3rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--colour-font);
+}

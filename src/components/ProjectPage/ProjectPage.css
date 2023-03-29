@@ -1,0 +1,6 @@
+.scroller-page {
+  height: 90vh;
+  padding: 5rem 10%;
+  display: grid;
+  grid-template-rows: 7rem 1fr;
+}

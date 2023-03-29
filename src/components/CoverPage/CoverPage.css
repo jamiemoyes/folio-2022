@@ -1,0 +1,167 @@
+.cover-page {
+  padding: 10rem 10%;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+  gap: 10vw;
+}
+
+.title h1 {
+  font-size: 4rem;
+  margin-block: 0;
+  line-height: 3rem;
+}
+
+.title {
+  display: grid;
+  grid-template: repeat(3, max-content) / repeat(3, 1fr);
+  row-gap: 4rem;
+}
+
+/* .purple-blue,
+.lightblue-darkblue,
+.green-yellow {
+  transition: 0.1s;
+} */
+
+.title-1 {
+  grid-column: 1 / span 3;
+  position: relative;
+  white-space: nowrap;
+  font-kerning: none;
+  overflow: hidden;
+}
+
+.title-2 {
+  grid-column: 2 / span 2;
+  position: relative;
+  white-space: nowrap;
+  font-kerning: none;
+}
+
+.title-3 {
+  grid-column: 3 / span 1;
+  position: relative;
+  white-space: nowrap;
+  font-kerning: none;
+}
+
+.title-1:hover > .purple-blue {
+  background-image: linear-gradient(to right, #7473ab, #ed6fa4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: rgba(242, 132, 211, 0.526) 0 0 30px;
+}
+
+.title-2:hover > .lightblue-darkblue {
+  color: blue;
+  background-image: linear-gradient(to right, #3cfacc, #8374df);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: rgba(116, 137, 255, 0.7) 0 0 30px;
+  /* transition: 0.2s; */
+}
+.title-3:hover > .green-yellow {
+  color: green;
+  background-image: linear-gradient(to right, #bcc682, #ffad62);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: rgba(254, 255, 172, 0.4) 0 0 30px;
+  /* transition: 0.2s; */
+}
+
+.bio {
+  font-family: 'Syne';
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.cover-page #project-badge {
+  position: absolute;
+  left: 62ch;
+  top: -0.8ch;
+}
+
+.cover-page #remote-badge .star-1 {
+  position: absolute;
+  top: -1.1rem;
+  right: -0.8rem;
+  width: 1.8rem;
+}
+
+.cover-page #remote-badge .star-2 {
+  position: absolute;
+  top: 0.5rem;
+  left: -0.5rem;
+  width: 1.5rem;
+}
+
+.cover-page #remote-badge {
+  position: absolute;
+  left: 12.4ch;
+  bottom: -0.3ch;
+}
+
+.cover-page #cv-badge {
+  position: absolute;
+  left: -3rem;
+  bottom: -1rem;
+}
+
+.cover-page .arrow-badge {
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.cover-page .arrow-badge:hover {
+  transform: translateY(1rem);
+}
+
+@media screen and (max-width: 1180px) {
+  .title {
+    grid-template: max-content / 1fr;
+    gap: 3rem;
+  }
+
+  .title-1,
+  .title-2,
+  .title-3 {
+    grid-column: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-1,
+  .title-2,
+  .title-3 {
+    grid-column: 1;
+    white-space: pre-wrap;
+  }
+
+  .cover-page {
+    padding: 5rem 10%;
+  }
+
+  .cover-page #cv-badge,
+  .cover-page #remote-badge,
+  .cover-page #project-badge {
+    top: unset;
+    bottom: -1.5rem;
+    left: 12rem;
+  }
+
+  .cover-page .arrow-badge {
+    display: none;
+  }
+}
+/* 
+@keyframes bounce {
+  to {
+    transform: translateY(1rem);
+  }
+} */

@@ -1,0 +1,6 @@
+.chip {
+  padding: 1ch 3ch;
+  border: solid 1px;
+  width: max-content;
+  border-radius: 5rem;
+}

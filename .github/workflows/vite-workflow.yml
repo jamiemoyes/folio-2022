@@ -19,15 +19,14 @@ permissions:
 concurrency:
   group: 'pages'
   cancel-in-progress: true
-
-env:
-  VITE_SPACE_ID: ${{ secrets.VITE_SPACE_ID }}
-  VITE_APP_TOKEN: ${{ secrets.VITE_APP_TOKEN }}
-  AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
       
 jobs:
   # Single deploy job since we're just deploying
   deploy:
+    env:
+      VITE_SPACE_ID: ${{ secrets.VITE_SPACE_ID }}
+      VITE_APP_TOKEN: ${{ secrets.VITE_APP_TOKEN }}
+      AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

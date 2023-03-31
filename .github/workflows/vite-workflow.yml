@@ -37,7 +37,7 @@ jobs:
         with:
           find: "$AUTH_TOKEN"
           replace: ${{ secrets.GITHUB_TOKEN }}
-          include: "./.npmrc"
+          regex: false
       - name: Check .NPMRC
         run: cat ./.npmrc
       - name: Checkout

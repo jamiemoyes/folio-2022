@@ -137,10 +137,10 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.2.0.tgz#5f3d96ec6b2354ad6d8a28bf216a1d97b5426861"
   integrity sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==
 
-"@jamiemoyes/project-scroller@^2.0.3":
-  version "2.0.3"
-  resolved "https://npm.pkg.github.com/download/@jamiemoyes/project-scroller/2.0.3/8c409dc940a8dc9ed41b1957992771d71c326927#8c409dc940a8dc9ed41b1957992771d71c326927"
-  integrity sha512-h9ZqSFBC8uwiowwDBwz7hOwv7XPywLfql4W3CxZ9w14XPqy1QEeRDkVn+MauGtnnO1LFdI4Az/4YLH5PPH9Ldg==
+"@jamiemoyes/project-scroller@^2.0.6":
+  version "2.0.6"
+  resolved "https://npm.pkg.github.com/download/@jamiemoyes/project-scroller/2.0.6/51d5295eb48845c8d5552f1ced7a866558511477#51d5295eb48845c8d5552f1ced7a866558511477"
+  integrity sha512-RTs/uaJ99YdDLhA7Gyk/d8S0r/shkoV8L6PhCx56vIQCXHcFDtS3BjAv6hAk4oQ3q55NMs3zifckjG9UqugM0A==
 
 "@motionone/animation@^10.15.1":
   version "10.15.1"

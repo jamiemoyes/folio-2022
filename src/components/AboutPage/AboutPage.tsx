@@ -13,7 +13,7 @@ const AboutPage = () => {
         <div className='img-container'>
           <img src={about.profilePic.url} alt={about.profilePic.description} />
         </div>
-        <RichTextView rawHTML={about.description.json as Document} />
+        <RichTextView rawHTML={about.description.json} />
       </div>
       <div className='tech-sec'>
         <h1>Tech I love</h1>

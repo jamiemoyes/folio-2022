@@ -17,10 +17,10 @@ const RemoteBadge = () => (
 
 const CoverPage = () => {
   useEffect(() => {
-    animate('.title-1', {
-      y: 10,
-      easing: 'ease-in-out',
-    });
+    // animate('.title-1', {
+    //   y: 10,
+    //   easing: 'ease-in-out',
+    // });
   }, []);
 
   return (

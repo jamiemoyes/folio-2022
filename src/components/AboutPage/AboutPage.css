@@ -28,3 +28,9 @@
   gap: 1rem;
   grid-template-rows: min-content min-content;
 }
+
+@media screen and (max-width: 600px) {
+  .img-container img {
+    aspect-ratio: 1;
+  }
+}

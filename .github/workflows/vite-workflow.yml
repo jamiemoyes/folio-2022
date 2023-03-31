@@ -37,9 +37,9 @@ jobs:
         with:
           find: "$AUTH_TOKEN"
           replace: ${{ secrets.AUTH_TOKEN }}
-          include: "**.npmrc"
+          include: ".npmrc"
       - name: Check .NPMRC
-        run: ls | cat ./.npmrc
+        run: cat ./.npmrc
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node

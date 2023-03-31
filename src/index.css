@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Inter;
+  src: url('fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@font-face {
+  font-family: Syne;
+  src: url('fonts/Syne-VariableFont_wght.ttf');
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

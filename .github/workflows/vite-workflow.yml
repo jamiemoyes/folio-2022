@@ -26,18 +26,19 @@ jobs:
     env:
       VITE_SPACE_ID: ${{ secrets.VITE_SPACE_ID }}
       VITE_APP_TOKEN: ${{ secrets.VITE_APP_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
-          find: "$AUTH_TOKEN"
-          replace: ${{ secrets.AUTH_TOKEN }}
-          regex: false
+#       - name: Find and Replace
+#         uses: jacobtomlinson/gha-find-replace@v3
+#         with:
+#           find: "$AUTH_TOKEN"
+#           replace: ${{ secrets.AUTH_TOKEN }}
+#           regex: false
       - name: Check .NPMRC
         run: cat ./.npmrc
       - name: Checkout
@@ -47,6 +48,8 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          registry-url: https://npm.pkg.github.com 
+          
       - name: Install dependencies
         run: npm install
       - name: Build

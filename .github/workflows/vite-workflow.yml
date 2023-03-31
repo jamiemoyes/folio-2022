@@ -32,15 +32,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-#       - name: Find and Replace
-#         uses: jacobtomlinson/gha-find-replace@v3
-#         with:
-#           find: "$AUTH_TOKEN"
-#           replace: ${{ secrets.AUTH_TOKEN }}
-#           regex: false
-      - name: Check .NPMRC
-        run: cat ./.npmrc
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node

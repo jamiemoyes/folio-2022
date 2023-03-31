@@ -26,7 +26,6 @@ jobs:
     env:
       VITE_SPACE_ID: ${{ secrets.VITE_SPACE_ID }}
       VITE_APP_TOKEN: ${{ secrets.VITE_APP_TOKEN }}
-      AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -37,7 +36,7 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "$AUTH_TOKEN"
-          replace: ${{secrets.GITHUB_TOKEN}}
+          replace: ${{ secrets.AUTH_TOKEN }}
           include: "**.npmrc"
       - name: Checkout
         uses: actions/checkout@v3

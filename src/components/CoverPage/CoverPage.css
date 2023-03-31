@@ -1,9 +1,9 @@
 .cover-page {
-  padding: 10rem 10%;
+  padding: 15% 10%;
   overflow-x: hidden;
   display: grid;
   place-items: center;
-  gap: 10vw;
+  gap: 5vw;
 }
 
 .title h1 {

@@ -36,7 +36,7 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "$AUTH_TOKEN"
-          replace: ${{ secrets.GITHUB_TOKEN }}
+          replace: ${{ secrets.AUTH_TOKEN }}
           regex: false
       - name: Check .NPMRC
         run: cat ./.npmrc

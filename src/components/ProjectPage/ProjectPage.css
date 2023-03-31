@@ -1,6 +1,14 @@
 .scroller-page {
   height: 90vh;
+  max-height: 60rem;
   padding: 5rem 10%;
   display: grid;
   grid-template-rows: 7rem 1fr;
+}
+
+@media (max-width: 700px) {
+  .scroller-page {
+    height: unset;
+    max-height: unset;
+  }
 }

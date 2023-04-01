@@ -39,8 +39,6 @@ function projectMapper({
 
 // Scroller todo
 // Sort out scrolling thing
-// Amend type of body element
-// Amend whitespace in preview bar in mobile view
 
 const ProjectPage = ({ projects }: { projects: Project[] }) => {
   const mappedProjects = projects

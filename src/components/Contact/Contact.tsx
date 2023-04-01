@@ -21,7 +21,7 @@ const Contact = () => {
       <h4>
         Reach out{' '}
         <a href='mailto: hello@jamiemoyes.dev' type='mail'>
-          hello@jamiemoyes.dev
+          hello@moyes.dev
         </a>
       </h4>
     </div>

@@ -9,7 +9,6 @@
 .title h1 {
   font-size: 4rem;
   margin-block: 0;
-  line-height: 3rem;
 }
 
 .title {
@@ -18,18 +17,22 @@
   row-gap: 4rem;
 }
 
-/* .purple-blue,
-.lightblue-darkblue,
-.green-yellow {
-  transition: 0.1s;
-} */
+.split-word {
+  white-space: pre;
+}
 
-.title-1 {
-  grid-column: 1 / span 3;
+.title-1,
+.title-2,
+.title-3 {
+  overflow: hidden;
+  line-height: 3rem;
   position: relative;
   white-space: nowrap;
   font-kerning: none;
-  /* overflow: hidden; */
+}
+
+.title-1 {
+  grid-column: 1 / span 3;
 }
 
 .title-2 {
@@ -75,6 +78,7 @@
 
 .bio {
   font-family: 'Syne';
+  opacity: 0;
 }
 
 h3 {
@@ -85,6 +89,7 @@ h3 {
   position: absolute;
   left: 62ch;
   top: -0.8ch;
+  opacity: 0;
 }
 
 .cover-page #remote-badge .star-1 {
@@ -105,17 +110,20 @@ h3 {
   position: absolute;
   left: 12.4ch;
   bottom: -0.3ch;
+  opacity: 0;
 }
 
 .cover-page #cv-badge {
   position: absolute;
   left: -3rem;
   bottom: -1rem;
+  opacity: 0;
 }
 
 .cover-page .arrow-badge {
   cursor: pointer;
   transition: transform 0.1s;
+  opacity: 0;
 }
 
 .cover-page .arrow-badge:hover {
@@ -139,7 +147,6 @@ h3 {
   .title-1,
   .title-2,
   .title-3 {
-    grid-column: 1;
     white-space: pre-wrap;
   }
 

@@ -25,7 +25,7 @@
 .title-2,
 .title-3 {
   overflow: hidden;
-  line-height: 3rem;
+  line-height: 3.5rem;
   position: relative;
   white-space: nowrap;
   font-kerning: none;
@@ -88,7 +88,7 @@ h3 {
 .cover-page #project-badge {
   position: absolute;
   left: 62ch;
-  top: -0.8ch;
+  top: 0;
   opacity: 0;
 }
 
@@ -108,14 +108,14 @@ h3 {
 
 .cover-page #remote-badge {
   position: absolute;
-  left: 12.4ch;
-  bottom: -0.3ch;
+  left: 12.3ch;
+  bottom: -0.2ch;
   opacity: 0;
 }
 
 .cover-page #cv-badge {
   position: absolute;
-  left: -3rem;
+  left: -1rem;
   bottom: -1rem;
   opacity: 0;
 }

@@ -65,17 +65,16 @@ const CoverPage = () => {
         }
       });
 
-      const badges = ['#project-badge', '#remote-badge', '#cv-badge'];
-      badges.forEach((badgeId, id) => {
-        animate(
-          badgeId,
-          {
-            opacity: [0, 1],
-            x: [id % 2 ? '3rem' : '-3rem', 0],
-          },
-          { easing: 'ease-out' }
-        );
-      });
+      // const badges = ['#project-badge', '#remote-badge', '#cv-badge'];
+      // badges.forEach((badgeId, id) => {
+      animate(
+        '.badge',
+        {
+          opacity: [0, 1],
+          x: ['3rem', 0],
+        },
+        { easing: 'ease-out', delay: stagger() }
+      );
 
       animate(
         '.reveal',

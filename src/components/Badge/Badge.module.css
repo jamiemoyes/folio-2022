@@ -3,7 +3,7 @@
   color: var(--colour-font);
   background: var(--bg-colour);
   width: max-content;
-  padding: 0.3ch 1.5ch;
+  padding-inline: 0.8ch;
   border-radius: 10rem;
   display: flex;
   align-items: center;

@@ -23,7 +23,7 @@ function Badge({
       href={href}
       target={target}
       id={componentId}
-      className={classes.badge}
+      className={`badge ${classes.badge}`}
       onClick={onClick}
     >
       {children}

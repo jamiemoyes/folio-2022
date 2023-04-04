@@ -7,7 +7,7 @@ import './AboutPage.css';
 const AboutPage = () => {
   const { about } = usePortfolioContext();
   return (
-    <div className='about-page'>
+    <section id='about-page' className='about-page'>
       <div className='about-section'>
         <h1>{about.title}</h1>
         <div className='img-container'>
@@ -19,7 +19,7 @@ const AboutPage = () => {
         <h1>Tech I love</h1>
         <TechStack />
       </div>
-    </div>
+    </section>
   );
 };
 

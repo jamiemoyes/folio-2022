@@ -13,6 +13,22 @@ interface StarProps extends ComponentProps<'svg'> {
   small?: boolean;
 }
 
+const SharpStar = ({ ...props }: ComponentProps<'svg'>) => (
+  <svg
+    width='18'
+    height='18'
+    viewBox='0 0 18 18'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+    {...props}
+  >
+    <path
+      d='M9 0L9.82241 6.44675C9.93772 7.35061 10.6494 8.06228 11.5532 8.17759L18 9L11.5532 9.82241C10.6494 9.93772 9.93772 10.6494 9.82241 11.5532L9 18L8.17759 11.5532C8.06228 10.6494 7.35061 9.93772 6.44675 9.82241L0 9L6.44675 8.17759C7.35061 8.06228 8.06228 7.35061 8.17759 6.44675L9 0Z'
+      fill='var(--colour-font)'
+    />
+  </svg>
+);
+
 const Star = ({ small = false, ...props }: StarProps) => {
   return small ? (
     <svg
@@ -76,4 +92,4 @@ const ArrowBadge = (props: ComponentProps<'svg'>) => {
     </svg>
   );
 };
-export { Arrow, Star, ArrowBadge };
+export { Arrow, Star, ArrowBadge, SharpStar };

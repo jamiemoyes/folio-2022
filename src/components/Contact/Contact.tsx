@@ -7,7 +7,7 @@ const Contact = () => {
   } = usePortfolioContext();
 
   return (
-    <div className={classes.contactSection}>
+    <section id='contact' className={classes.contactSection}>
       <div className={classes.socials}>
         <h4>Catch me on</h4>
         <div className={classes.links}>
@@ -24,7 +24,7 @@ const Contact = () => {
           hello@moyes.dev
         </a>
       </h4>
-    </div>
+    </section>
   );
 };
 

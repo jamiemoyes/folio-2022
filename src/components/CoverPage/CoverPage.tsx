@@ -88,7 +88,7 @@ const CoverPage = () => {
   }, []);
 
   return (
-    <div className='cover-page'>
+    <section id='home' className='cover-page'>
       <div className='title'>
         <h1 className='title-1'>
           I'm a <span className='purple-blue'>software engineer</span>
@@ -127,7 +127,7 @@ const CoverPage = () => {
       <a href='#project-page'>
         <ArrowBadge className='arrow-badge reveal' />
       </a>
-    </div>
+    </section>
   );
 };
 export { CoverPage };

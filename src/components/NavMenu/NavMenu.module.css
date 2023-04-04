@@ -1,0 +1,66 @@
+.navMenu {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  font-family: Syne;
+  margin: 2rem;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+}
+
+.navMenu button {
+  background-color: var(--colour-font);
+  color: var(--bg-colour);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  font-family: Syne;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.1s;
+  opacity: 0;
+}
+
+.navMenu button:hover {
+  background-color: var(--bg-colour);
+  color: var(--colour-font);
+  outline: solid 1px var(--colour-font);
+}
+.navLinks {
+  display: flex;
+  gap: 1em;
+  border: solid 1px white;
+  background-color: var(--bg-colour);
+  border-radius: 0.4rem;
+  align-items: center;
+  padding-inline: 1rem;
+  overflow: hidden;
+  transition: 0.4s;
+  position: relative;
+  padding-left: 3rem;
+  justify-content: center;
+  width: 0rem;
+  opacity: 0;
+}
+
+.navLinks a {
+  color: var(--colour-font);
+  text-decoration: none;
+  transform: translateY(-3rem);
+  overflow: hidden;
+  white-space: pre;
+}
+
+.navLinks svg {
+  position: absolute;
+  left: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .navMenu {
+    display: none;
+  }
+}

@@ -53,7 +53,6 @@ const CoverPage = () => {
       await Promise.all(
         chars.map((splitType, i) => {
           const cname = `.title-${i + 1}-char`;
-          console.log({ cname });
           return animationFunction(cname, i).finished;
         })
       );

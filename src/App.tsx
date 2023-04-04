@@ -13,7 +13,7 @@ import { NavMenu } from './components/NavMenu/NavMenu';
 function App() {
   const { data: portfolio, error, isLoading } = useProjects();
 
-  if (!portfolio) return <p>...Loading</p>;
+  if (!portfolio) return <p></p>;
   return (
     <PortfolioProvider portfolio={portfolio}>
       <div className='App'>

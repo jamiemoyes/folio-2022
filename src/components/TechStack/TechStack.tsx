@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { categoryList } from '../../constants';
 import { usePortfolioContext } from '../../context/PortfolioContext';
 import { ColourType, Category } from '../../types';
@@ -13,15 +14,12 @@ const TechStack = () => {
   const {
     techStackCollection: { items },
   } = usePortfolioContext();
+
   return (
     <div className='tech-container'>
       <div className='chip-container'>
         {items.map(({ categories, name }) => {
-          return (
-            <Chip categories={categories as Category[]} colour='red'>
-              {name}
-            </Chip>
-          );
+          return <Chip categories={categories as Category[]}>{name}</Chip>;
         })}
       </div>
       <form>

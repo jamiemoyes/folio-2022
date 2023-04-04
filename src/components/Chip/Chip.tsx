@@ -1,4 +1,4 @@
-import { PropsWithChildren, useRef } from 'react';
+import { PropsWithChildren, useEffect, useRef } from 'react';
 import { Category, ColourType } from '../../types';
 import './Chip.css';
 import { categoryList } from '../../constants';
@@ -13,24 +13,26 @@ const getCategoryDefs = (categories: Category[]) =>
     categories.includes(categoryName)
   );
 
-const Chip = ({ children, categories, colour }: ChipProps) => {
+const Chip = ({ children, categories }: ChipProps) => {
   const chipRef = useRef<HTMLDivElement>(null);
 
   const catDefs = getCategoryDefs(categories);
 
-  if (chipRef.current) {
-    if (catDefs.length === 1) {
-      chipRef.current.style.borderColor = `var(--colour-${catDefs[0].colour})`;
-    } else {
-      chipRef.current.style.borderColor = `var(--colour-${catDefs[1].colour})`;
+  useEffect(() => {
+    if (chipRef.current) {
+      if (catDefs.length === 1) {
+        chipRef.current.style.borderColor = `var(--colour-${catDefs[0].colour})`;
+      } else {
+        chipRef.current.style.borderColor = `var(--colour-${catDefs[1].colour})`;
+      }
     }
-  }
+  }, [chipRef, catDefs]);
 
   return (
     <div
       className={`chip ${categories
         .map((category) => `chip-${category}`)
-        .join(' ')} ${colour}`}
+        .join(' ')}`}
       ref={chipRef}
     >
       {children}

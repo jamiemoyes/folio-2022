@@ -10,7 +10,6 @@ const RichTextView = ({ rawHTML }: { rawHTML: JSON }) => {
     if (richText.current) {
       richText.current.innerHTML = formattedRichText;
     }
-    console.log('rawHTML updated');
   }, [rawHTML]);
 
   return <div ref={richText} />;

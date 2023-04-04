@@ -31,7 +31,7 @@
 .navLinks {
   display: flex;
   gap: 1em;
-  border: solid 1px white;
+  border: solid 1px var(--colour-font);
   background-color: var(--bg-colour);
   border-radius: 0.4rem;
   align-items: center;

@@ -6,7 +6,7 @@ import SplitType from 'split-type';
 import { AnimationControls, animate, spring, stagger, timeline } from 'motion';
 
 const RemoteBadge = () => (
-  <div id='remote-badge'>
+  <div id='remote-badge' className='badge'>
     <Badge onClick={() => {}}>
       <p>+ remote</p>
     </Badge>

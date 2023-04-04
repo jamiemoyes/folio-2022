@@ -12,3 +12,9 @@
     max-height: unset;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .scroller-page {
+    padding: 5rem 5%;
+  }
+}

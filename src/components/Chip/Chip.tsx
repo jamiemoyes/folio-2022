@@ -5,7 +5,6 @@ import { categoryList } from '../../constants';
 
 interface ChipProps extends PropsWithChildren {
   categories: Category[];
-  colour: ColourType;
 }
 
 const getCategoryDefs = (categories: Category[]) =>

@@ -33,4 +33,11 @@
   .img-container img {
     aspect-ratio: 1;
   }
+  .about-page {
+    padding: 5rem 5%;
+  }
+
+  .img-container img {
+    outline-offset: 0.5rem;
+  }
 }

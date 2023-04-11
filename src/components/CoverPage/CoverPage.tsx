@@ -101,13 +101,13 @@ const CoverPage = () => {
         </h1>
         <h1 className='title-2'>
           based in <span className='lightblue-darkblue'>Glasgow</span>
-          <Badge componentId='remote-badge' onClick={() => {}}>
+          <Badge componentId='remote-badge'>
             <p>+ remote</p>
           </Badge>{' '}
         </h1>
         <h1 className='title-3'>
           let's <span className='green-yellow'>talk!</span>
-          <Badge componentId='cv-badge' direction='up'>
+          <Badge componentId='cv-badge' direction='up' href='/CV - 2023.pdf'>
             <p>CV</p>
           </Badge>
         </h1>

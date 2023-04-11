@@ -5,14 +5,12 @@ import { Arrow } from '../../assets/icons';
 interface BadgeProps extends PropsWithChildren {
   componentId?: string;
   direction?: 'up' | 'down' | 'none';
-  onClick?: () => void;
   href?: string;
   target?: string;
 }
 
 function Badge({
   direction = 'none',
-  onClick,
   componentId,
   children,
   href,
@@ -24,7 +22,6 @@ function Badge({
       target={target}
       id={componentId}
       className={`badge ${classes.badge}`}
-      onClick={onClick}
     >
       {children}
       {direction !== 'none' && (

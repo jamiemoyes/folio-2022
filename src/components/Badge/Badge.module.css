@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
   gap: 0.3ch;
-  cursor: pointer;
   height: 1.4rem;
   z-index: 1;
   font-size: 1rem;

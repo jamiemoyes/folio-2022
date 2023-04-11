@@ -26,6 +26,7 @@
   scroll-behavior: smooth;
 
   --colour-font: white;
+  --colour-font-2: #aeaeae;
   --colour-primary: #9562d6;
   --colour-secondary: #2c2c2c;
   --colour-yellow: #d6ca62;
@@ -62,8 +63,10 @@ a {
 @media (prefers-color-scheme: light) {
   :root {
     --colour-font: #171717;
-    --bg-colour: #ededed;
-    --colour-secondary: #d3d3d3;
+    --colour-font-2: #404040;
+
+    --bg-colour: #ffffff;
+    --colour-secondary: #efefef;
     --colour-yellow: #ff7b00;
     --colour-green: #43ca63;
     --colour-red: #e25f5f;

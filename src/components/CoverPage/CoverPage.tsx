@@ -101,7 +101,9 @@ const CoverPage = () => {
         </h1>
         <h1 className='title-2'>
           based in <span className='lightblue-darkblue'>Glasgow</span>
-          <RemoteBadge />
+          <Badge componentId='remote-badge' onClick={() => {}}>
+            <p>+ remote</p>
+          </Badge>{' '}
         </h1>
         <h1 className='title-3'>
           let's <span className='green-yellow'>talk!</span>

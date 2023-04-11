@@ -19,7 +19,7 @@ const TechStack = () => {
     <div className='tech-container'>
       <div className='chip-container'>
         {items.map(({ categories, name }) => {
-          return <Chip categories={categories as Category[]}>{name}</Chip>;
+          return <Chip categories={categories}>{name}</Chip>;
         })}
       </div>
       <form>

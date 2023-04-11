@@ -1,3 +1,5 @@
+import { Category } from './Tech';
+
 export interface ContentfulResponse {
     portfolio: Portfolio;
 }
@@ -40,7 +42,8 @@ export interface Project {
     subtitle?:   string;
     startDate:   string;
     endDate?:     string;
-    description?: Description;
+    description: Description;
+    techCollection: TechStack;
 }
 
 export interface Description {
@@ -77,5 +80,5 @@ export interface TechStack {
 
 export interface TechItem {
     name:       string;
-    categories: string[];
+    categories: Category[];
 }

@@ -32,7 +32,7 @@ const NavMenu = () => {
         animate(
           `.${classes.navLinks} svg`,
           {
-            rotate: 225,
+            rotate: -225,
           },
           { easing: spring() }
         );

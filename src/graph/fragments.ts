@@ -23,6 +23,14 @@ fragment ProjectFragment on Folio {
             description {
               json
             }
+            techCollection {
+                items {
+                  ... on TechItem {
+                    name
+                    categories
+                  }
+                }
+              }
           }
 `
 export { ABOUT_FRAGMENT, PROJECT_FRAGMENT}

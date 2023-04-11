@@ -3,8 +3,8 @@
   color: var(--colour-font);
   background: var(--bg-colour);
   width: max-content;
-  padding-inline: 0.8ch;
-  border-radius: 10rem;
+  padding-inline: 0.5ch;
+  border-radius: 0 0.4rem;
   display: flex;
   align-items: center;
   gap: 0.3ch;

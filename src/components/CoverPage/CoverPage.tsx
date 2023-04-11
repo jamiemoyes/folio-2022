@@ -5,15 +5,15 @@ import './CoverPage.css';
 import SplitType from 'split-type';
 import { AnimationControls, animate, spring, stagger, timeline } from 'motion';
 
-const RemoteBadge = () => (
-  <div id='remote-badge' className='badge'>
-    <Badge onClick={() => {}}>
-      <p>+ remote</p>
-    </Badge>
-    <Star className='star-1' />
-    <Star small className='star-2' />
-  </div>
-);
+// const RemoteBadge = () => (
+//   <div id='remote-badge' className='badge'>
+//     <Badge onClick={() => {}}>
+//       <p>+ remote</p>
+//     </Badge>
+//     <Star className='star-1' />
+//     <Star small className='star-2' />
+//   </div>
+// );
 
 const CoverPage = () => {
   const titles = Array.from({ length: 3 }).map(
